@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guessing Birthday</title>
+  <link rel="stylesheet" href="guess.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Guessing Birthday</h1>
+    <div class="wrapper">
+
+      <div class="info">
+        <h2>info:</h2>
+        <p>You can find out the date of the month when your friend was born by asking five questions. Each question asks
+          whether the day is in one of the five sets of numbers.</p>
+        <button id="showBtn" class="btn">Let's start</button>
+        <button id="playAgain" class="btn">Play Again</button>
+      </div>
+
+      <div class="showbox">
+        <h3>Is your birthday in Set <span id="setNum">1</span> ?</h3>
+        <div class="img">
+          <img src="imgs/set1.png" id="img" alt="set1">
+        </div>
+        <button id="yes" class="btn">Yes</button>
+        <button id="no" class="btn">No</button>
+      </div>
+
+    </div>
+
+    <div id="showResult">Your birthday is <span id="birthday"></span></div>
+    
+  </div>
+
+  <script src="guess.js"></script>
+</body>
+
+</html>
